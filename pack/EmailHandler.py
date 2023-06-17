@@ -67,7 +67,7 @@ class EmailHandler():
             imap.close() # close the mailbox
             imap.logout() # logout from the account
 
-        RUNTIME = datetime.datetime.now() - START_TIME
+        RUNTIME = datetime.now() - START_TIME
         self.logger.write_info('TOTAL RUNTIME: ' + str(RUNTIME))
 
 # Desc.: Tests gmail credentials
